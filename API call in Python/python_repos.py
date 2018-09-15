@@ -26,12 +26,23 @@ print("Repositories Returned :",len(repo_dicts))
 
 repo_dict = repo_dicts[0]
 
-print("/nKeys:", len(repo_dict))
+
+print("\n Selected information about the first repository")
+
+print('Name:',repo_dict['name'])
+
+print('owner:', repo_dict['owner']['login'])
+
+print('stars:', repo_dict['stargazers_count'])
+
+print('repository:', repo_dict['html_url'])
+
+print('created:', repo_dict['created_at'])
+
+print('updated', repo_dict['updated_at'])
+
+
+print('Description:', repo_dict['description'])
 
 
 
-#process result
-
-for key in sorted(repo_dict.keys()):
-
-	print(key)
